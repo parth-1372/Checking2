@@ -10,7 +10,10 @@ function App() {
   // let counter = 15;
   const addValue = ()=>{
    if(counter<20){
-    setcounter(counter+1)
+    setcounter((prevCounter)=>prevCounter+1)
+    setcounter((prevCounter)=>prevCounter+1)
+    setcounter((prevCounter)=>prevCounter+1)
+    setcounter((prevCounter)=>prevCounter+1)
    }
   }
   const removeValue = ()=>{
