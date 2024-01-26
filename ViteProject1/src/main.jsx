@@ -2,12 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
  
-// function NewApp (){
-//   return (
-//     <h1>Changed through main.js </h1>
-//   )
-// }
-// export default NewApp
+function NewApp (){
+  const username="Parth Mungra"
+  return (
+    <h1>Changed through main.js {username} </h1>
+  )
+}
+export default NewApp
 
 // const reactElement = {
 //   type: 'a',
@@ -28,9 +29,9 @@ const anotherElement = (
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-  //   {/* <NewApp/> */}
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <NewApp/>
+  </React.StrictMode>,
   // anotherElement
 reactElement  
 )
